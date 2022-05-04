@@ -1,0 +1,80 @@
+/* My project 1 */
+
+position: absolute;
+width: 1280px;
+height: 720px;
+left: 0px;
+top: 0px;
+background: url(My project.jpg);
+
+
+/* Home */
+
+position: absolute;
+width: 122px;
+height: 60px;
+left: 82px;
+top: 70px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #FFFFFF;
+
+
+/* Heroes */
+
+position: absolute;
+width: 108px;
+height: 45px;
+left: 807px;
+top: 80px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+text-align: center;
+color: #FFFFFF;
+
+
+/* Squad */
+
+position: absolute;
+width: 100px;
+height: 45px;
+left: 1017px;
+top: 80px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+text-align: center;
+color: #FFFFFF;
+
+
+/* May the force be with you! */
+
+position: absolute;
+width: 366.33px;
+height: 222px;
+left: 51.27px;
+top: 261px;
+font-family: 'Fredericka the Great';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 74px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #DDCA9A;
+/*transform: rotate(0.66deg);*/
