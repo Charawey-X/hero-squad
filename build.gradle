@@ -6,7 +6,7 @@ plugins {
 group 'org.apache.gradle'
 version '1.0-SNAPSHOT'
 
-mainClassName = 'App'
+mainClassName = 'herosquad/App'
 
 sourceCompatibility = 1.8
 

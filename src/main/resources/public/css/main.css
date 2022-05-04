@@ -1,3 +1,7 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Berkshire+Swash&family=Fredericka+the+Great&family=Henny+Penny&family=Rancho&family=Redressed&family=Rochester&family=Rye&family=Vast+Shadow&display=swap');
+
+
 /* My project 1 */
 body {
 position: absolute;
@@ -5,7 +9,7 @@ width: 1280px;
 height: 720px;
 left: 0px;
 top: 0px;
-background: url(My project.jpg);
+background: url('images/My project.jpg');
 }
 
 
@@ -67,9 +71,14 @@ color: #FFFFFF;
 }
 
 
+/*Links*/
+a {
+text-decoration:none !important;
+}
+
 /* May the force be with you! */
 
-.force {
+.quote {
 position: absolute;
 width: 366.33px;
 height: 222px;
