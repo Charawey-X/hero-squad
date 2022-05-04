@@ -4,12 +4,15 @@
 
 /* My project 1 */
 body {
-position: absolute;
+/*position: absolute;
 width: 1280px;
-height: 720px;
+height: 720px;*/
 left: 0px;
 top: 0px;
 background: url('/images/My project.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
 }
 
 
