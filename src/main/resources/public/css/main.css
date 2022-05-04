@@ -1,15 +1,17 @@
 /* My project 1 */
-
+body {
 position: absolute;
 width: 1280px;
 height: 720px;
 left: 0px;
 top: 0px;
 background: url(My project.jpg);
+}
 
 
 /* Home */
 
+h1 {
 position: absolute;
 width: 122px;
 height: 60px;
@@ -25,10 +27,12 @@ display: flex;
 align-items: flex-end;
 text-align: center;
 color: #FFFFFF;
+}
 
 
 /* Heroes */
 
+.heroes {
 position: absolute;
 width: 108px;
 height: 45px;
@@ -42,10 +46,11 @@ line-height: 45px;
 /* identical to box height */
 text-align: center;
 color: #FFFFFF;
-
+}
 
 /* Squad */
 
+.squad {
 position: absolute;
 width: 100px;
 height: 45px;
@@ -59,10 +64,12 @@ line-height: 45px;
 /* identical to box height */
 text-align: center;
 color: #FFFFFF;
+}
 
 
 /* May the force be with you! */
 
+.force {
 position: absolute;
 width: 366.33px;
 height: 222px;
@@ -78,3 +85,5 @@ align-items: flex-end;
 text-align: center;
 color: #DDCA9A;
 /*transform: rotate(0.66deg);*/
+}
+

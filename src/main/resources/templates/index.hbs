@@ -1,9 +1,13 @@
+{{#partial "header" }}
+    <link rel="stylesheet" href="/css/main.css">
+{{/partial}}
+
 {{#partial "content"}}
     <!--It's useful to put a comment at the top of your hbs file to help you keep track of what is what when things get more complex.-->
     <h1><a href='/'>Home</a></h1>
-    <p><a href='/heroes'>Heroes</a></p>
-    <p><a href='/squads' >Squads</a></p>
-    <p>May the force be with you!</p>
+    <p class="heroes"><a href='/heroes'>Heroes</a></p>
+    <p class="squad"><a href='/squads' >Squads</a></p>
+    <p class="quote">May the force be with you!</p>
 {{/partial}}
 
 {{> layout.hbs}}
