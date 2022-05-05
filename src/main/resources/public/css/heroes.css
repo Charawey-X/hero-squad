@@ -72,6 +72,19 @@ text-align: center;
 color: orangered;
 }
 
+
+/*hero results*/
+
+.hero-results{
+    margin: 30px;
+    position: relative;
+    padding: 30px;
+    border-radius: 70px;
+    width: 400px;
+    color: white;
+}
+
+
 /*heroes form*/
 h1{
 position: absolute;
