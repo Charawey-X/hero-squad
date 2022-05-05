@@ -11,8 +11,10 @@
         <h2>SQUAD</h2>
         {{#if squads}}
             {{#each squads}}
-                <p>{{name}} belongs to squad {{squadName}}</p>
-                <p>The {{squadName}} are committed to fighting {{squadCause}}</p>
+                <p class="results">
+                    {{ squadName }} : <br>
+                    The {{ squadName }} are committed to fighting {{ squadCause }}<br>
+                </p>
             {{/each}}
             {{else}}
                <p class="noHero">There are no squads!</p>

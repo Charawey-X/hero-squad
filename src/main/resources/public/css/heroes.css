@@ -1,10 +1,11 @@
 /* My project(1) 1 */
 
 body{
-height: 97vh;
+min-height: 97vh;
 background: url('/images/My project(4).jpg');
 background-color: #FFFFFF; /* Used if the image is unavailable */
 background-position: center center;
+background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
 -webkit-background-size: cover;
@@ -18,12 +19,12 @@ background-size: cover;
 .heroes {
 position: absolute;
 width: 95%;
-height: 80%;
+height: 500px;
 left: 30px;
 right: 30px;
 display: flex;
 align-items: center;
-top: 20px;
+top: 100px;
 background: rgba(15, 14, 14, 0.6);
 border-radius: 20px;
 }
@@ -36,7 +37,7 @@ position: absolute;
 width: 220px;
 height: 42px;
 left: 494px;
-top: 0px;
+top: 15px;
 font-family: 'Sans-serif';
 font-style: normal;
 font-weight: 700;
@@ -57,11 +58,11 @@ position: absolute;
 width: 150px;
 height: 50px;
 left: 42%;
-top: 550px;
+top: 500px;
 background: rgba(196, 196, 196, 0.5);
 border-radius: 10px !important;
 border:transparent;
-font-family: 'Poppins';
+font-family: 'Sans-serif';
 font-style: normal;
 font-weight: 700 !important;
 font-size: 20px !important;
@@ -77,7 +78,6 @@ font-family: 'Sans-serif';
 font-style: normal;
 font-weight: 700 !important;
 font-size: 30px !important;
-
 display:flex;
 justify-content:center;
 align-items:center;
@@ -89,13 +89,20 @@ color:white;
 
 /*hero results*/
 
-.hero-results{
-    margin: 30px;
-    position: relative;
-    padding: 30px;
-    border-radius: 70px;
-    width: 400px;
+.results{
+    margin:10px;
+    position:;
+    padding:15px;
+    width: 300px;
     color: white;
+    font-family: 'Sans-serif';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    display:;
+    justify-content:;
+    align-items:;
+    text-align:;
 }
 
 
@@ -117,7 +124,13 @@ color: #DDCA9A;
 }
 
 .form-section{
-margin-top: 100px !important;
+margin-top: 5px !important;
+left:350px;
+width:600px !important;
+}
+
+.heroes h1{
+left:440px;
 }
 
 .form-label{
@@ -135,4 +148,22 @@ color:white !important;
 
 .bottom:hover{
 background-color:white;
+}
+
+/*squad-form*/
+.form-two{
+align-items: center;
+margin-top: 30px;
+border-radius: 20px;
+background: rgba(15, 14, 14, 0.6);
+width: 95%;
+height: 500px;
+margin-left: 30px;
+right: 30px;
+display:flex;
+justify-content:center;
+}
+
+.form-two h1 {
+margin-top:80px;
 }

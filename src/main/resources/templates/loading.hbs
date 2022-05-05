@@ -1,0 +1,69 @@
+{{> layout.hbs}}
+
+
+<head>
+    <style>
+     body{
+       background: url('/images/My project(5).jpg');
+       background-color: #FFFFFF; /* Used if the image is unavailable */
+       background-position: center center;
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-size: cover;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       min-height: 100vh;
+     }
+     .heroes {
+       position: absolute;
+       width: 95%;
+       height: 500px;
+       left: 30px;
+       right: 30px;
+       display: flex;
+       align-items: center;
+       top: 100px;
+       background: rgba(15, 14, 14, 0.6);
+       border-radius: 20px;
+     }
+     button{
+       position: absolute;
+       width: 250px;
+       height: 50px;
+       top: 300px;
+       background: rgba(196, 196, 196, 0);
+       border-radius: 10px !important;
+       border:3px solid rgba(196, 196, 196, 0.8);
+       font-family: 'Sans-serif';
+       font-style: normal;
+       font-weight: 700 !important;
+       font-size: 20px !important;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       color: orangered;
+     }
+     .bottom:hover{
+       background-color:white;
+     }
+     .button-a{
+       margin-left:20%;
+     }
+     .button-b{
+       margin-left:60%;
+     }
+    </style>
+</head>
+
+
+<!--It's useful to put a comment at the top of your hbs file to help you keep track of what is what when things get more complex.-->
+<div class="heroes">
+    <div>
+        <button type="button" class="bottom button-a" onclick="window.location.href='/heroes';">VIEW ALL HEROES</button>
+    </div>
+    <div>
+        <button type="button" class="bottom button-b" onclick="window.location.href='/squads';">VIEW ALL SQUADS</button>
+    </div>
+</div>

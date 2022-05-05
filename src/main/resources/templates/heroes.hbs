@@ -2,6 +2,22 @@
 
 <head>
     <link rel="stylesheet" href="/css/heroes.css">
+    <style>
+        a:hover{
+          transform:scale(1.1);
+        }
+        p a{
+          background: #FF0000;
+          background: linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
+          -o-background-clip: text;
+          -o-text-fill-color: transparent;
+          color: orangered !important;
+        }
+    </style>
 </head>
 
     <!--It's useful to put a comment at the top of your hbs file to help you keep track of what is what when things get more complex.-->
@@ -9,21 +25,20 @@
     <h2>HEROES</h2>
         {{#if hero}}
             {{#each hero}}
-                <div class="heroes">
-                    <p>You created this hero</p>
-                    <p>Your hero name: {{name}}</p>
-                    <p>Your hero age: {{age}}</p>
-                    <p>Their Superpower: {{superpower}}</p>
-                    <p>Their Weakness: {{weakness}}</p>
-                    {{#if squads}}
-                        {{#each squads}}
-                            <p>{{name}} belongs to squad {{squadName}}</p>
-                            <p>The {{squadName}} are committed to fighting {{squadCause}}</p>
-                        {{/each}}
-                    {{else}}
-                        <p>Have your hero in a squad <a href="/form_two">here</a></p>
-                    {{/if}}
-                </div>
+                    <p class="results">
+                        Hero name: {{ name }} <br>
+                        Hero age: {{ age }} <br>
+                        Superpower: {{ superpower }} <br>
+                        Weakness: {{ weakness }} <br>
+                        {{#if squads}}
+                            {{#each squads}}
+                                    {{ name }} belongs to squad {{ squadName }}<br>
+                                    The {{ squadName }} are committed to fighting {{ squadCause }}
+                            {{/each}}
+                        {{else}}
+                            <a href="/form_two" style="text-decoration:none; color:white;">Click to place your hero in a squad</a>
+                        {{/if}}
+                    </p>
             {{/each}}
         {{else}}
             <p class="noHero">You have not created any hero yet!</p>

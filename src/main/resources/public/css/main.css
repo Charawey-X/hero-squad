@@ -5,12 +5,13 @@
 /* My project 1 */
 body {
 /*position: absolute;*/
-height: 97vh;
+min-height: 97vh;
 /*left: 0px;
 top: 0px;*/
 background-image: url('/images/My project(3).jpg');
 background-color: #FFFFFF; /* Used if the image is unavailable */
 background-position: center center;
+background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
 -webkit-background-size: cover;
