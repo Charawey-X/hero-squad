@@ -23,6 +23,8 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             ArrayList<Hero> hero = Hero.getInstances();
             model.put("hero", hero);
+            ArrayList<Squad> squads = Squad.getInstances();
+            model.put("squads", squads);
             return new ModelAndView(new HashMap(), "heroes.hbs");
 
         },new HandlebarsTemplateEngine());
@@ -33,7 +35,7 @@ public class App {
 
         },new HandlebarsTemplateEngine());
 
-        post("/heroes", (request, response) -> {
+        post("/heroes/new", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             String heroName = request.queryParams("name");
             Integer heroAge = Integer.valueOf(request.queryParams("age"));
@@ -43,33 +45,30 @@ public class App {
             return new ModelAndView(model, "heroes.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/squads",(request, response) ->{
+            Map<String, Object> model = new HashMap<>();
+            ArrayList<Squad> squads = Squad.getInstances();
+            model.put("squads", squads);
+            return new ModelAndView(new HashMap(), "squad.hbs");
 
-//
-//        get("/squads",(request, response) ->{
-//            Map<String, Object> model = new HashMap<>();
-//            ArrayList<Squad> squads = Squad.getInstances();
-//            model.put("squads", squads);
-//            return new ModelAndView(new HashMap(), "squads.hbs");
-//
-//        },new HandlebarsTemplateEngine());
-//
-//        get("/form_two", (request, response) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            ArrayList<Hero> hero = Hero.getInstances();
-//            model.put("hero", hero);
-//            ArrayList<Squad> squads = Squad.getInstances();
-//            model.put("squads", squads);
-//            return new ModelAndView(model, "form two.hbs");
-//
-//        }, new HandlebarsTemplateEngine());
-//
-//        post("/squads", (request, response) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            String squadName = request.queryParams("squadName");
-//            String squadCause = request.queryParams("squadCause");
-//            Squad squad = new Squad(squadName, squadCause);
-//            return new ModelAndView(model, "squads.hbs");
-//        }, new HandlebarsTemplateEngine());
+        },new HandlebarsTemplateEngine());
 
+        get("/form_two", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            ArrayList<Hero> hero = Hero.getInstances();
+            model.put("hero", hero);
+            ArrayList<Squad> squads = Squad.getInstances();
+            model.put("squads", squads);
+            return new ModelAndView(model, "form-two.hbs");
+
+        }, new HandlebarsTemplateEngine());
+
+        post("/squads", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            String squadName = request.queryParams("squadName");
+            String squadCause = request.queryParams("squadCause");
+            Squad squad = new Squad(squadName, squadCause);
+            return new ModelAndView(model, "squad.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }

@@ -1,13 +1,32 @@
-{{#partial "header" }}
-    <link rel="stylesheet" href="/css/heroes.css">
-{{/partial}}
+{{> layout.hbs}}
 
-{{#partial "content"}}
+<head>
+    <link rel="stylesheet" href="/css/heroes.css">
+</head>
+
     <!--It's useful to put a comment at the top of your hbs file to help you keep track of what is what when things get more complex.-->
     <div class="heroes">
     <h2>HEROES</h2>
+        {{#if hero}}
+            {{#each hero}}
+                <div class="heroes">
+                    <p>You created this hero</p>
+                    <p>Your hero name: {{name}}</p>
+                    <p>Your hero age: {{age}}</p>
+                    <p>Their Superpower: {{superpower}}</p>
+                    <p>Their Weakness: {{weakness}}</p>
+                    {{#if squads}}
+                        {{#each squads}}
+                            <p>{{name}} belongs to squad {{squadName}}</p>
+                            <p>The {{squadName}} are committed to fighting {{squadCause}}</p>
+                        {{/each}}
+                    {{else}}
+                        <p>Have your hero in a squad <a href="/form_two">here</a></p>
+                    {{/if}}
+                </div>
+            {{/each}}
+        {{else}}
+            <p class="noHero">You have not created any hero yet!</p>
+        {{/if}}
     </div>
     <button type="button" class="bottom" onclick="window.location.href='/form';">ADD HERO</button>
-{{/partial}}
-
-{{> layout.hbs}}

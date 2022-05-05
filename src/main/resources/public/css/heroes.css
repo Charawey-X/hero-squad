@@ -72,6 +72,20 @@ text-align: center;
 color: orangered;
 }
 
+.noHero {
+font-family: 'Sans-serif';
+font-style: normal;
+font-weight: 700 !important;
+font-size: 30px !important;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+margin-left: 400px;
+width: 400px;
+color:white;
+}
 
 /*hero results*/
 
