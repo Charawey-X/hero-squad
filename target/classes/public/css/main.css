@@ -1,0 +1,118 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Berkshire+Swash&family=Fredericka+the+Great&family=Henny+Penny&family=Poppins:wght@500&family=Rancho&family=Redressed&family=Rochester&family=Rye&family=Vast+Shadow&display=swap');
+
+
+/* My project 1 */
+body {
+/*position: absolute;*/
+min-height: 97vh;
+/*left: 0px;
+top: 0px;*/
+background-image: url('/images/My project(3).jpg');
+background-color: #FFFFFF; /* Used if the image is unavailable */
+background-position: center center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+
+
+/* Home */
+/*
+h1 {
+position: absolute;
+width: 122px;
+height: 60px;
+left: 82px;
+top: 10px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;*/
+/* identical to box height */
+/*display: flex;
+align-items: flex-end;
+text-align: center;
+color: #FFFFFF;
+}
+*/
+
+/* Heroes */
+
+.heroes {
+position: absolute;
+width: 150px;
+height: 50px;
+left: 807px;
+top: 15px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 45px;
+/* identical to box height */
+text-align: center;
+color: #FFFFFF;
+}
+
+/* Squad */
+
+.squad {
+position: absolute;
+width: 150px;
+height: 50px;
+left: 1117px;
+top: 15px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 45px;
+/* identical to box height */
+text-align: center;
+color: #FFFFFF;
+}
+
+
+/*Links*/
+button {
+text-decoration:none !important;
+background-color: #0439A3;
+opacity:0.7;
+color:white;
+border-radius:20px;
+border:transparent;
+}
+
+button:hover {
+opacity:0.5;
+transform:scale(1.2);
+border:3px solid #0439A3;
+background-color: #ACD8F9;
+color: #0439A3;
+}
+
+/* May the force be with you! */
+
+.quote {
+position: absolute;
+width: 450px;
+height: 222px;
+left: 800px;
+top: 350px;
+font-family: 'Fredericka the Great';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 74px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #DDCA9A;
+/*transform: rotate(0.66deg);*/
+}
+

@@ -1,0 +1,42 @@
+{{> layout.hbs}}
+
+<head>
+    <link rel="stylesheet" href="/css/heroes.css">
+</head>
+
+<form action="/squads" method="post" class="form-two">
+    <h1>CREATE A SQUAD</h1>
+    <div class="form-section">
+      <div class="mb-3">
+        <label for="squadName" class="form-label">Squad Name</label>
+        <input type="text" name="squadName" id="squadName" class="form-control" required>
+      </div>
+      <div class="mb-3">
+         <label for="squadCause" class="form-label">Squad Cause</label>
+         <select name="squadCause" id="squadCause" required>
+            <option value="Crime">Crime</option>
+            <option value="Corruption">Corruption</option>
+            <option value="Aliens">Aliens</option>
+            <option value="Supervillains">Super villains</option>
+            <option value="Pollution">Pollution</option>
+            <option value="Illiteracy">Illiteracy</option>
+            <option value="AnimalRights">Animal Rights</option>
+         </select>
+      </div>
+      <div class="mb-3">
+        <label for="squadCapacity" class="form-label">Squad Capacity</label>
+        <input type="number" name="squadCapacity" id="squadCapacity" class="form-control" required>
+      </div>
+      <div>
+        <label for="squadMembers" class="form-label">Squad Members</label>
+        <select name="squadMembers" id="squadMembers" required>
+
+            {{#each hero}}
+                <option value="{{ name }}">{{ name }}</option>
+            {{/each}}
+
+        </select>
+      </div>
+    </div>
+        <button type="submit" class="button bottom">SUBMIT</button>
+</form>

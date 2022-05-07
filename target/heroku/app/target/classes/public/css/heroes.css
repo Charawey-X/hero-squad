@@ -1,0 +1,169 @@
+/* My project(1) 1 */
+
+body{
+min-height: 97vh;
+background: url('/images/My project(4).jpg');
+background-color: #FFFFFF; /* Used if the image is unavailable */
+background-position: center center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+
+
+/* Rectangle 2 */
+
+.heroes {
+position: absolute;
+width: 95%;
+height: 500px;
+left: 30px;
+right: 30px;
+display: flex;
+align-items: center;
+top: 100px;
+background: rgba(15, 14, 14, 0.6);
+border-radius: 20px;
+}
+
+
+/* HEROES */
+
+h2{
+position: absolute;
+width: 220px;
+height: 42px;
+left: 494px;
+top: 15px;
+font-family: 'Sans-serif';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #B4B3FF;
+}
+
+
+/* Rectangle 1 */
+
+button{
+position: absolute;
+width: 150px;
+height: 50px;
+left: 42%;
+top: 500px;
+background: rgba(196, 196, 196, 0.5);
+border-radius: 10px !important;
+border:transparent;
+font-family: 'Sans-serif';
+font-style: normal;
+font-weight: 700 !important;
+font-size: 20px !important;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: orangered;
+}
+
+.noHero {
+font-family: 'Sans-serif';
+font-style: normal;
+font-weight: 700 !important;
+font-size: 30px !important;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+margin-left: 400px;
+width: 400px;
+color:white;
+}
+
+/*hero results*/
+
+.results{
+    margin:10px;
+    position:;
+    padding:15px;
+    width: 300px;
+    color: white;
+    font-family: 'Sans-serif';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    display:;
+    justify-content:;
+    align-items:;
+    text-align:;
+}
+
+
+/*heroes form*/
+h1{
+position: absolute;
+top:30px !important;
+left: 494px;
+font-family: 'Sans-serif';
+font-style: normal;
+font-weight: 700 !important;
+font-size: 40px !important;
+line-height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #DDCA9A;
+}
+
+.form-section{
+margin-top: 5px !important;
+left:350px;
+width:600px !important;
+}
+
+.heroes h1{
+left:440px;
+}
+
+.form-label{
+font-family: 'Sans-serif';
+font-style: normal;
+font-weight: 600 !important;
+font-size: 20px;
+color: white;
+}
+
+.form-control{
+background-color:rgba(196, 196, 196, 0.5) !important;
+color:white !important;
+}
+
+.bottom:hover{
+background-color:white;
+}
+
+/*squad-form*/
+.form-two{
+align-items: center;
+margin-top: 30px;
+border-radius: 20px;
+background: rgba(15, 14, 14, 0.6);
+width: 95%;
+height: 500px;
+margin-left: 30px;
+right: 30px;
+display:flex;
+justify-content:center;
+}
+
+.form-two h1 {
+margin-top:80px;
+}
