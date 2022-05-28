@@ -1,0 +1,27 @@
+{{>layout.hbs}}
+
+<h1>{{squad.name}}</h1>
+<h5>Here are all the heroes in this squad!</h5>
+
+{{#each heroes}}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">{{age}}</h6>
+            <h6 class="card-text">{{superpower}}</h6>
+            <h6 class="card-text">{{weakness}}</h6>
+            <h6 class="card-text text-muted">{{joinedat}}</h6>
+        </div>
+        <div class="card-body">
+            <a href="/heroes/{{id}}/update" class="card-link">Update</a>
+            <a href="/heroes/{{id}}/delete" class="card-link">Delete</a>
+        </div>
+    </div>
+{{/each}}
+
+<div>
+    <a href="/squads/{{squad.id}}/edit">Edit this squad</a><br>
+    <a href="/squads/{{squad.id}}/delete">DELETE this squad</a>
+</div>

@@ -1,0 +1,72 @@
+{{#partial "content"}}
+
+{{#if editHero}}
+    <h1>Edit this hero!</h1>
+    <form action="/heroes/{{hero.id}}" method="post">
+        <div class="mb-3">
+            <label for="newHeroName" class="form-label">Edit this hero's name</label>
+            <input placeholder="Hero Name" id="newHeroName" name="newHeroName" type="text" class="form-control" value="{{hero.name}}" required>
+        </div>
+        <div class="mb-3">
+            <label for="newHeroAge" class="form-label">Edit this hero's age</label>
+            <input placeholder="Age" id="newHeroAge" name="newHeroAge" type="number" class="form-control" value="{{hero.age}}" required>
+        </div>
+        <div class="mb-3">
+            <label for="newHeroPower" class="form-label">Edit this hero's superpower</label>
+            <input placeholder="Superpower" id="newHeroPower" name="newHeroPower" type="text" class="form-control" value="{{hero.superpower}}" required>
+        </div>
+        <div class="mb-3">
+            <label for="newHeroWeak" class="form-label">Edit this hero's weakness</label>
+            <input placeholder="Weakness" id="newHeroWeak" name="newHeroWeak" type="text" class="form-control" value="{{hero.weakness}}" required>
+        </div>
+        <div class="mb-3">
+            <label for="newSquad" class="form-label">Change Squad</label>
+            <select id="newSquad" name="newSquad" class="form-select">
+                <option selected>Choose...</option>
+                {{#each squads}}
+                <option value="{{id}}">{{name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-default">Go!</button>
+    </form>
+
+{{else}}
+    <h1>Add a new Hero!</h1>
+    <form action="/heroes" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Hero name</label>
+            <input placeholder="Hero Name" id="name" name="name" type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input placeholder="Age" id="age" name="age" type="number" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="power" class="form-label">Superpower</label>
+            <input placeholder="Superpower" id="power" name="power" type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="weak" class="form-label">Weakness</label>
+            <input placeholder="Weakness" id="weak" name="weak" type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="squad" class="form-label">Squad</label>
+            <select id="squad" name="squad" class="form-select">
+                <option selected>Choose...</option>
+                {{#if squads}}
+                {{#each squads}}
+                    <option value="{{id}}">{{name}}</option>
+                {{/each}}
+                {{else}}
+                    <option onclick="window.location.href='/squads/new'">Add A Squad</option>
+                {{/if}}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-default">Go!</button>
+    </form>
+{{/if}}
+
+{{/partial}}
+
+{{>layout.hbs}}

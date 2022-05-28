@@ -1,12 +1,33 @@
-{{#partial "header" }}
-    <link rel="stylesheet" href="/css/main.css">
-{{/partial}}
 
 {{#partial "content"}}
-    <!--It's useful to put a comment at the top of your hbs file to help you keep track of what is what when things get more complex.-->
-    <button type="button" class="heroes" onclick="window.location.href='/heroes';">Heroes</button>
-    <button type="button" class="squad" onclick="window.location.href='/squads';">Squads</button>
-    <h1 class="quote">Welcome to the world of heroes!</h1>
+    <div class="page-header">
+        <img src="images/My project(5).jpg" width="100%">
+    </div>
+<h1>Welcome to the world of Heroes!</h1>
+{{#if heroes}}
+    {{#each heroes}}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">{{age}}</h6>
+                <h6 class="card-text">{{superpower}}</h6>
+                <h6 class="card-text">{{weakness}}</h6>
+                <h6 class="card-text text-muted">{{joinedat}}</h6>
+            </div>
+            <div class="card-body">
+                <a href="/heroes/{{id}}/update" class="card-link">Update</a>
+                <a href="/heroes/{{id}}/delete" class="card-link">Delete</a>
+            </div>
+        </div>
+    {{/each}}
+
+{{else}}
+    <h5>There are no heroes!</h5>
+    <button type="submit" class="btn btn-default" onclick="window.location.href='/heroes/new'">Add A Hero</button>
+{{/if}}
+
 {{/partial}}
 
-{{> layout.hbs}}
+{{>layout.hbs}}
